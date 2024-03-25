@@ -3,6 +3,8 @@
 using Celeste64;
 using Celeste64.Mod;
 
+using MonoMod.RuntimeDetour;
+
 // FujiCodeMod is the entry point of your mod - extending from Fuji's GameMod class.
 public class FujiCodeMod : GameMod
 {
