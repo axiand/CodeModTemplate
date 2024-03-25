@@ -1,6 +1,8 @@
 # Fuji Code Mod
 
-This repository was generated from the fuji code mod template.
+Welcome to the Fuji Code Mod Template!
+
+This template contains all the basic things needed to get started with Fuji modding, including the necessary references, a hot-reload-powered build config, and an entrypoint C# source file for getting started.
 
 You can adjust this file to your needs after reading through it.
 
