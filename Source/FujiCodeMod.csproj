@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <AssemblyName>MyCoolMod</AssemblyName>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="FosterFramework" Version="0.1.18-alpha" />
+    <Reference Include="Celeste64">
+      <HintPath>$(FujiDir)/Celeste64.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+  <Target Name="CopyToDist" AfterTargets="Build" Inputs="$(OutputPath)\$(AssemblyName).dll" Outputs="..\Dist\Libraries">
+    <Copy SourceFiles="$(OutputPath)\$(AssemblyName).dll" DestinationFolder="..\Dist\Libraries" />
+  </Target>
+
+</Project>

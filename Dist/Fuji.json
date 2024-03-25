@@ -1,0 +1,7 @@
+{
+    "Id": "FujiCodeMod",
+    "Name": "New Code Mod",
+    "ModAuthor": "<your-name>",
+    "Description": "My code mod description",
+    "Version": "0.1.0"
+}
