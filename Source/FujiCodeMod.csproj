@@ -18,4 +18,11 @@
     <Copy SourceFiles="$(OutputPath)\$(AssemblyName).dll" DestinationFolder="..\Dist\Libraries" />
   </Target>
 
+  <Target Name="DistToFuji" AfterTargets="CopyToDist" Inputs="..\Dist\" Outputs="$(FujiDir)\Mods\$(AssemblyName)">
+    <ItemGroup>
+      <DistDir Include="..\Dist\**\*.*" />
+    </ItemGroup>
+    <Copy SourceFiles="@(DistDir)" DestinationFolder="$(FujiDir)\Mods\$(AssemblyName)\%(RecursiveDir)" />
+  </Target>
+
 </Project>
