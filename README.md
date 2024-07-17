@@ -1,3 +1,6 @@
+### This is probably not the version of the template you're looking for.
+### Go see FujiAPI/Code-Mod-Template
+
 # Fuji Code Mod
 
 Welcome to the Fuji Code Mod Template!
